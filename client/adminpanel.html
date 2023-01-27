@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+        <link rel="stylesheet" type="text/css" href="css/adminpanel.css">   
+        <title>CoordShare Map</title>
+    </head>
+    <body>
+
+        <div class = "header">           
+            <div class = "header__inner">
+                <div class = header__icon>
+                    <img src = "images/tempicon.png">
+                </div>
+
+                <div class = header__logo>
+                    <h1>Coord<span>Share</span> Admin<span> Panel</span></h1>            
+                </div>
+
+                <form action="/mapscreen" method="get" class = "form" id = "home">
+                    <ul class="header__logout">
+                        <button class = "header__button" type="logout">Home</button>  
+                        <!--<a href="" method="get" action="/logout"><li>Logout</li></a>!-->    
+                    </ul>
+                </form>  
+
+                <form action="/logout" method="get" class = "form" id = "logout">
+                    <ul class="header__logout">
+                        <button class = "header__button" type="logout">Logout</button>  
+                        <!--<a href="" method="get" action="/logout"><li>Logout</li></a>!-->    
+                    </ul>
+                </form>  
+
+
+            </div>
+
+        </div>
+        <div id = "map"></div>  
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK_FWILF9mCsCUk3Iqzf36nIqrIx3CnpU&callback=initMap&v=weekly"
+            async
+            ></script>        
+        
+        <div class = "controlButtons">
+                    <div class = form__button__Approve>
+                        <button id="approve" class="approveButton">Approve</button> 
+                    </div>
+                    <div class = form__button__Deny>
+                        <button id="deny" class="denyButton">Deny</button> 
+                    </div>
+    </div>
+            
+        <footer class = "footer"></footer>
+
+    </body>
+    <script src = "js/adminpanel.js"></script>       
+</html>

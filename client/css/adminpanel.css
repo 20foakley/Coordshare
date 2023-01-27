@@ -1,0 +1,206 @@
+
+body {
+    font-family:Arial,Helvetica,sans-serif;
+    --color-primary: #3c3f3f; 
+    --color-primary-black :#000000;
+    --color-primary-white: #ffffff;
+    --color-primary-grey:#dddddd;
+    --color-secondary: #052f38;
+    --color-error:red;
+    --color-success:green;
+    --border-radius: 4px;
+    margin:0;
+    padding:0;
+    list-style:none;
+    background: var(--color-primary );
+    /*background: url(./html/images/background.jpg);*/
+    background-size: cover;
+    height: 100vh;
+    width:100%;
+    align-items:center;
+}
+
+
+
+
+
+.header{
+    font-family:Arial,Helvetica,sans-serif;
+    width:100%;
+    height:80px;
+    display:block;
+    background-color:var(--color-primary-white);
+}
+
+.header__inner{
+    width:1000px;
+    height:100%;
+    display:block;
+    margin:0 auto;
+    background:var(--color-primary-grey);
+}
+
+.header__icon img{
+    height:fill;
+    width:80px;
+    display:table;
+    float:left;
+    padding:0px 20px;
+    
+
+}
+
+.header__logo{
+    height:100%;
+    display:table;
+    float:left;
+}
+
+.header_logo h1{
+    color:var(--color-primary-black);
+    height:100%;
+    /*display:table-cell;
+    vertical-align:middle;*/
+    font-size:32px;
+}
+
+.logo_container h1 span{
+    font-weight:800;
+    float:left;
+}
+
+.header__logout{
+    float:right;
+    height:100%;
+    
+}
+
+.header__logout a{
+    float:left;
+    height:100%;
+    display:table;
+    padding:0px 20px;
+
+}
+
+.header__logout a li{
+    display:table-cell;
+    /*vertical-align:middle;*/
+    height:100%;
+    color:var(--color-primary-black);
+    font-size:18px;
+
+    
+}
+
+.header__admin--hidden{
+    float:right;
+    height:100%;
+    
+
+}
+
+.header__admin--hidden a{
+    float:left;
+    height:100%;
+    display:table;
+    padding:0px 20px;
+    
+}
+
+.header__admin--hidden a li{
+    display:table-cell;
+    /*vertical-align:middle;*/
+    height:100%;
+    color:var(--color-primary-black);
+    font-size:18px;
+    
+}
+
+.header__text{
+    height:100%;
+    display:table;
+    float:middle;
+
+}
+
+
+#map{
+    /*align-items:center;*/
+    height: 100%;
+    width: 100%;
+
+    
+}
+
+.viewSubmissions{
+    display:block;
+    width:fill;
+    margin:1rem;
+    padding:0.75rem;
+    box-sizing:border-box;
+    border-radius:var(--border-radius);
+    border: 1px solid var(--color-primary-white);
+    outline:none;
+    background: var(--color-primary-white);
+    /* transition on background color */
+    transition: background 0.2s, border-color 0.2s;
+
+
+}
+
+.viewSubmissions h1{
+    position:center;
+}
+
+.controlButtons{
+    position:center;
+    align-items:center;
+    width: 60%;
+}
+
+.controlButtons button{
+    width: 100%;
+    padding: 1rem 2rem;
+    margin:1rem;
+    font-weight:bold;
+    font-size: 1.1rem;
+    color:var(--color-primary-white);
+    border:none;
+    border-radius:var(--border-radius);
+    cursor:pointer;
+    background:var(--color-secondary);
+    
+}
+
+
+.submissionBox--hidden{
+    /*display:none;*/
+}
+
+/*input boxes css*/
+
+.fillCoordinates, .fillTitle, .fillDescription, .fillImage{
+    display:block;
+    width:100%;
+    padding:0.75rem;
+    box-sizing:border-box;
+    border-radius:var(--border-radius);
+    border: 1px solid var(--color-primary-white);
+    outline:none;
+    background: var(--color-primary-grey);
+    /* transition on background color */
+    transition: background 0.2s, border-color 0.2s;
+
+
+}
+
+.fillImage{
+    position:right;
+
+}
+
+
+.form__button{
+    
+}

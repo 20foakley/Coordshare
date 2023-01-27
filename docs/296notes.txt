@@ -1,0 +1,25 @@
+jquery - ajax calls for node example
+have to reference that in html (google api)
+npm install -s (-s = save)
+npm install -s express
+npm install -s cors
+npm install -s mysql
+
+npm install -s nodemon 
+(server resets automatically when we make changes?)
+
+npm i --save nodemon
+
+node server/app.js
+
+html works but css doesn't for some reason
+
+https://www.youtube.com/watch?v=4BhhGs0PFHU
+
+added homepage to package.json to let react know
+
+npm install express-session --save.
+
+2/27/22
+trying to add basic login functionality
+don't have registration yet

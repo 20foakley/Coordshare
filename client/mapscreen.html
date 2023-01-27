@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>      
+        <link rel="stylesheet" type="text/css" href="css/mapscreen.css">   
+        <title>CoordShare Map</title>
+    </head>
+    <body>
+        <div class = "header">           
+            <div class = "header__inner">
+                <div class = header__icon>
+                    <img src = "images/tempicon.png">
+                </div>
+
+                <div class = header__logo>
+                    <h1>Coord<span>Share</span></h1>            
+                </div>
+                <form action="/logout" method="get" class = "form" id = "logout">
+                    <ul class="header__logout">
+                        <button class = "header__button" type="logout">Logout</button>  
+                        <!--<a href="" method="get" action="/logout"><li>Logout</li></a>!-->    
+                    </ul>
+                </form>
+                <form action="/adminpanel" method="get" class = "form" id = "admin">
+                    <ul class="header__admin--hidden">
+                        <button class = "header__button" type="adminpanel">Admin</button>  
+                        <!--<a href="" method="get" action="/adminpanel"><li>Admin</li></a>!--> 
+                    </ul>   
+            </form>
+            </div>
+
+        </div>
+        <div id = "map"></div>  
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK_FWILF9mCsCUk3Iqzf36nIqrIx3CnpU&callback=initMap&v=weekly"
+            async
+            ></script>        
+        <!--can do --hidden to toggle, or use .hide() command? -->
+        <div class = "submissionBox--hidden">
+            <form class = "submissionBox" id = "submission" enctype="multipart/form-data">
+            
+                <h1 class = "submissionBox__top">Submission</h1>
+        
+                <div class = "fillCoordinates">Coordinates: </div>
+
+                <hr class="solid">
+                
+                <div class = "submissionBox__field">
+                    <div class = "inputTitle__field">
+                        <p>Title:</p>
+                        <input type = "text" class = "inputTitle" autofocus placeHolder="Title">
+                        <div class = "form__input-error-message"></div>
+                    </div>
+                    
+                    <div class = "inputDescription__field">
+                        <p>Description (max 400 chars):</p>
+                        <textarea class = "inputDescription" input type = "text" cols = "50" rows = "10"></textarea>
+                        <div class = "form__input-error-message"></div>
+                    </div>
+
+                    <div class = "uploadImage">
+                        
+                            <p>Upload image:</p>
+                            <input type="file"  id = "fileuploadid" name = "fileupload"> 
+                            </input>
+                            <div class = "form__input-error-message"></div>
+                        
+                    </div>
+
+                    <div class = "form__button">
+                        <button type="submit" class="submit">Submit</button> 
+                    </div>    
+                </div>               
+            </form>
+
+    </div>
+        <script src = "js/mapscreen.js"></script>   
+        <footer class = "footer"></footer>
+
+    </body>
+
+</html>
